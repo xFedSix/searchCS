@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Advanced Search</title>
 </head>
 <body>
-   <header>
-        <a href="index.html">Search</a>
-        <a href="imageSearch.html">Image Search</a>
-    <form action="https://google.com/search">
-        <input type="text" name="q" placeholder="Search...">
-        <input type="text" name="as_q" placeholder="All these words">
-        <input type="text" name="as_epq" placeholder="Exact phrase">
-        <input type="text" name="as_oq" placeholder="Any of these words">
-        <input type="text" name="as_eq" placeholder="None of these words">
-        <input type="text" name="as_filetype" placeholder="File type">
-        <input type="submit" value="Advanced Search">
+    <header class="top-bar">
+        <a href="index.html">Google Search</a>
+    </header>
+
+    <main class="advanced-container">
+        <h1>Advanced Search</h1>
+        <form class="advanced-form" action="https://www.google.com/search" method="get">
+            <label>All these words
+                <input type="text" name="as_q">
+            </label>
+            <label>Exact phrase
+                <input type="text" name="as_epq">
+            </label>
+            <label>Any of these words
+                <input type="text" name="as_oq">
+            </label>
+            <label>None of these words
+                <input type="text" name="as_eq">
+            </label>
+            <label>File type
+                <input type="text" name="as_filetype">
+            </label>
+            <div class="buttons">
+                <input type="submit" value="Advanced Search">
+            </div>
+        </form>
+    </main>
 </body>
 </html>
